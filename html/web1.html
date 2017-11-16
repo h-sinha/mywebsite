@@ -4,31 +4,30 @@
 	<title>Home Page</title>
 	 <meta charset="utf-8" />
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <script src="web.js"></script>
 	 <link rel="stylesheet" type="text/css" href="web.css">
-	 <script src="web.js"></script>	 
 	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 	 <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
 	 <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
 	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+</head>
 <body>
 	<div class="homebuttons">
 			<ul>
-				<li><a href="#Top">HOME</a></li>
-				<li><a href="#aboutme">ABOUT ME</a></li>
-				<li><a href="#coding">CODING BACKGROUND</a></li>
-				<li><a href="#contact">CONTACT</a></li>
-				<li><a href="#quora">QUORA PICKS</a></li>
+				<div class="floating-box"><li><a href="#Top">HOME</a></li></div>
+				<div class="floating-box"><li><a href="#aboutme">ABOUT ME</a></li></div>
+				<div class="floating-box"><li><a href="#coding">CODING SKILLS</a></li></div>
+				<div class="floating-box"><li><a href="#contact">CONTACT</a></li></div>
+				<div class="floating-box"><li><a href="#quora">QUORA PICKS</a></li></div>
 			</ul>
 		</div>
-	</br>
 	<h1>Hi There! I'm Harsh</h1>
-	<img alt="me" src="mypic.jpg" class="me">
+	<img alt="me" src="mypic.jpg" id="me">
 	<p id="aboutme"><b>Pursuing Computer Science and Engineering at IIIT Hyderabad</b></p>
 <a href="#Top" id="backtotop"><img src="scroll.png" height="120" width="120"></a>
 <!--*********************************************ABOUT ME**********************************************-->
-</br>
-<script>rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();</script>
+<hr></hr>
 		<h1>About Me</h1>	
 	<div class="information">
 	<a name="aboutme"></a>
@@ -40,9 +39,12 @@
 <!--******************************************CODING BACKGROUND*****************************************-->
 	</br>
 	<a name="coding"></a>	
-	<script>rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();</script>
-	<h1>Coding Background</h1>
+	<hr></hr>
+	<h1>Coding SKills</h1>
 	<div class="information">
+	</br>
+	<p align="center">Programming languages I have tried</p>
+
 		<table>
 			<tr>
 				<td><p><b>C++</p></td>
@@ -135,7 +137,7 @@
 <!--**********************************************QUORA PICKS***********************************************-->
 </br>
 <a name="quora"></a>
-<script>rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();</script>
+	<hr></hr>
 <h1>Quora Picks</h1>
 <div class="information">
 	</br>
@@ -152,8 +154,8 @@
 </div>
 <!--**********************************************CONTACT***********************************************-->
 	</br>
+	<hr></hr>
 	<a name="contact"></a>
-	<script>rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();rule();</script>
 	<h1>Get In Touch</h1>
 	<div class="information">
 	</br>
@@ -175,7 +177,7 @@
 		<img id="twitter" src="twitter.png" >
 	</a>
 </p>
-
 </div>
+<footer>sad</footer>
 </body>
 </html>

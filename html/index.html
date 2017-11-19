@@ -17,9 +17,9 @@
 		<select name="menu" onchange="selectRedirect(this)">
 		    <option selected disabled>MENU</option>
 			<option value=#TOP>HOME</option>
- 			<option value=#aboutme>ABOUT ME</option>
+ 			<option value=index.html#in>ABOUT ME</option>
   			<option value=#coding>CODING SKILLS</option>
-		    <option value=#quora>QUORA PICKS</option>
+		    <option value=#q>QUORA PICKS</option>
   			<option value=contact.html>CONNECT</option>
 		</select>
 		<br>
@@ -27,10 +27,10 @@
 	<!--********************************************homebuttons******************************************************-->
 	<div class="homebuttons">
 			<ul>
-				<li><a href="#Top" onclick=fade("me")>&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
-				<li><a href="#in" onclick=fade("in")>&nbsp;&nbsp;ABOUT ME&nbsp;&nbsp;</a></li>
+				<li><a href="index.html">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
+				<li><a href="index.html#in" onclick=fade("in")>&nbsp;&nbsp;ABOUT ME&nbsp;&nbsp;</a></li>
 				<li><a href="#coding" onclick=fade("graph")>&nbsp;&nbsp;CODING SKILLS&nbsp;&nbsp;</a></li>
-				<li><a href="#qu" onclick=fade("q")>&nbsp;&nbsp;QUORA PICKS&nbsp;&nbsp;</a></li>
+				<li><a href="#q" onclick=fade("q")>&nbsp;&nbsp;QUORA PICKS&nbsp;&nbsp;</a></li>
 				<li><a href="contact.html">&nbsp;&nbsp;CONNECT&nbsp;&nbsp;</a></li>
 			</ul>
 		</div>
@@ -41,8 +41,8 @@
 <a href="#Top" id="backtotop"><img alt="scroll" src="images/scroll.png" height="120" width="120"></a>
 <!--*********************************************ABOUT ME**********************************************-->
 	<hr>
+	<div id="in"><br>
 		<h1>About Me</h1>
-	<div id="in">
 	<div class="info">
 		<br>	
 	<p>I am a resident of Patna and currently pursuing Computer Science and Engineering at IIIT Hyderabad.I’m passionate, optimistic and a dedicated person who takes up responsibilities with utmost enthusiasm and see to it that I complete my tasks and assignments in time. I’ve a great amount of perseverance to achieve my goal.</p>
@@ -54,7 +54,8 @@
 	
 <!--******************************************CODING BACKGROUND*****************************************-->
 	<br>
-	<hr id="coding">
+	<hr>
+	<div id="coding"><br>
 	<h1>Coding Skills</h1>
 	<div class="information">
 	<br>
@@ -62,12 +63,13 @@
 		<img id="graph" alt="codinggraph" src="images/graph1.png">
 	</p>
 	<br>
+</div>
 	</div>
 <!--**********************************************QUORA PICKS***********************************************-->
 <br>
-	<hr id="qu">
+	<hr>
+<div id="q"><br>
 <h1>Quora Picks</h1>
-<div id="q">
 <div class="quora">
 	<br>
 	<p>Quora is a community of people who love learning.Of course there is no end to love.Checkout some of my bookmarked answers for the love of learning.</p>

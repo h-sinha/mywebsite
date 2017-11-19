@@ -49,25 +49,6 @@ body
     to   { opacity: 0; }
 }
 
-@-moz-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
-}
-
-@-webkit-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
-}
-
-@-ms-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
-}
-
-@-o-keyframes fadeout {
-    from { opacity: 1; }
-    to   { opacity: 0; }
-}
  a{
  color: blue;
 
@@ -126,7 +107,7 @@ body
 	}
 }
 select{
-	animation-duration: 3s;
+	animation-duration: 5s;
 	animation-name: slider;
 	position: fixed;
 	right: 0;
@@ -161,7 +142,7 @@ select{
   }
 }
 .homebuttons{
-	animation-duration: 3s;
+	animation-duration: 5s;
   	animation-name: slidein;
 	z-index: 2;
 	margin: 0 auto;
@@ -210,7 +191,7 @@ select{
   }
 }
 #backtotop{
-	animation-duration: 3s;
+	animation-duration: 5s;
   	animation-name: slidedown;
 	margin: 3vw;
 	margin-right: 4vw;
@@ -302,8 +283,18 @@ footer img{
 	width: 3%;
 
 }
+@keyframes slidemap {
+  from {
+  	margin-left: 20em;
+  }
 
+  to {
+  	margin-left:2.5em;
+  }
+}
 #map{
+	animation-duration: 5s;
+  	animation-name: slidemap;
 	height:35vw;
 	width: 40vw;
 	margin-left: 2.5em;

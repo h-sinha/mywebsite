@@ -10,4 +10,11 @@ function initMap() {
           map: map
         });
       }
-  
+function selectRedirect(selectBlog) {
+    var newLink = selectBlog.value;
+    window.location= newLink;
+  }
+function fade(id)
+  {
+    document.getElementById(id).style.animation="4s linear 0s 1 fadein" ;  
+  }

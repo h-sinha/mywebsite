@@ -42,8 +42,35 @@ body
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-ms-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@-o-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
  a{
  color: blue;
+
 }
 	h1{
 
@@ -56,6 +83,7 @@ body
     	font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
 	}
 	 .information p{
+	 
 		margin-left: 2%;
 		font-family:Alegreya Sans SC;
 		text-align: center;
@@ -75,7 +103,66 @@ body
 		color: #ffffff;
 		text-align: center;	
 }
+
+@media screen and (min-width : 768px)
+{
+	.auxhome{
+		display:none;
+		
+	}
+}
+@media screen and (max-width : 768px)
+{
+	.homebuttons
+	{
+		display:none;
+	}
+}@keyframes slider{
+	from{
+		right:100vh;
+	}
+	to{
+		right=0;
+	}
+}
+select{
+	animation-duration: 3s;
+	animation-name: slider;
+	position: fixed;
+	right: 0;
+	top:50%;
+	padding: 5px 5px;
+	border-radius: 3px;
+	width:30vw;
+	height: auto;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	top:0;
+  	text-align: center;
+  	letter-spacing: 0.4vw;
+  	 font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+	font-weight: bold;
+	text-align: center;
+  	font-size: 2.8vw;
+  	color:white;
+  	letter-spacing: 0.01vh;
+  	line-height: 9vh;
+  	cursor: pointer;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
 .homebuttons{
+	animation-duration: 3s;
+  	animation-name: slidein;
 	z-index: 2;
 	margin: 0 auto;
 	position: fixed;
@@ -113,7 +200,18 @@ body
 .homebuttons ul	 li a:hover {
 	color:black;
 }
+@keyframes slidedown {
+  from {
+    height: 100vh
+  }
+
+  to {
+    height: 15vh;
+  }
+}
 #backtotop{
+	animation-duration: 3s;
+  	animation-name: slidedown;
 	margin: 3vw;
 	margin-right: 4vw;
 	width: 15vh;
@@ -121,6 +219,7 @@ body
 	position: fixed;
     bottom: 0;
     right:0;
+    z-index: 10
 
 }
 .information{
@@ -195,6 +294,7 @@ hr {
    margin: 8px auto;
    border-top: 1px solid #aaaaaa;
    border-bottom: 1px solid #ffffff;
+   z-index: 0;
 }
 footer img{
 	margin-bottom: 0 auto;

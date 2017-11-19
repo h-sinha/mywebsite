@@ -4,7 +4,6 @@
 	<title>Home Page</title>
 	 <meta charset="utf-8" />
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	 <script type="text/javascript" src="web.js"></script>
 	 <link rel="stylesheet" type="text/css" href="web.css">
 	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
@@ -13,12 +12,25 @@
 	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 </head>
 <body>
+	<!--********************************************auxhome**********************************************************-->
+	<div class="auxhome">
+		<select name="menu" onchange="selectRedirect(this)">
+		    <option selected disabled>MENU</option>
+			<option value=#TOP>HOME</option>
+ 			<option value=#aboutme>ABOUT ME</option>
+  			<option value=#coding>CODING SKILLS</option>
+		    <option value=#quora>QUORA PICKS</option>
+  			<option value=contact.html>CONNECT</option>
+		</select>
+		<br>
+	</div>
+	<!--********************************************homebuttons******************************************************-->
 	<div class="homebuttons">
 			<ul>
-				<li><a href="#Top">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
-				<li><a href="#aboutme">&nbsp;&nbsp;ABOUT ME&nbsp;&nbsp;</a></li>
-				<li><a href="#coding">&nbsp;&nbsp;CODING SKILLS&nbsp;&nbsp;</a></li>
-				<li><a href="#quora">&nbsp;&nbsp;QUORA PICKS&nbsp;&nbsp;</a></li>
+				<li><a href="#Top" onclick=fade("me")>&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
+				<li><a href="#in" onclick=fade("in")>&nbsp;&nbsp;ABOUT ME&nbsp;&nbsp;</a></li>
+				<li><a href="#coding" onclick=fade("graph")>&nbsp;&nbsp;CODING SKILLS&nbsp;&nbsp;</a></li>
+				<li><a href="#qu" onclick=fade("q")>&nbsp;&nbsp;QUORA PICKS&nbsp;&nbsp;</a></li>
 				<li><a href="contact.html">&nbsp;&nbsp;CONNECT&nbsp;&nbsp;</a></li>
 			</ul>
 		</div>
@@ -30,12 +42,14 @@
 <!--*********************************************ABOUT ME**********************************************-->
 	<hr>
 		<h1>About Me</h1>
+	<div id="in">
 	<div class="info">
 		<br>	
 	<p>I am a resident of Patna and currently pursuing Computer Science and Engineering at IIIT Hyderabad.I’m passionate, optimistic and a dedicated person who takes up responsibilities with utmost enthusiasm and see to it that I complete my tasks and assignments in time. I’ve a great amount of perseverance to achieve my goal.</p>
 	<p>Currently I am learning Web Development and different Programming languages.I am also active on various Competitive Programming sites like   <a href="http://www.hackerRank.com">HackerRank</a> , <a href="http://www.codeforces.com">Codeforces</a> , <a href="http://www.codechef.com">Codechef</a> , <a href="http://www.spoj.com">SPOJ</a> . </p>
 	<p>Wanna know more about me ? Contact me <a href="contact.html">here</a> . </p>
 	<br>
+</div>
 </div>
 	
 <!--******************************************CODING BACKGROUND*****************************************-->
@@ -51,8 +65,9 @@
 	</div>
 <!--**********************************************QUORA PICKS***********************************************-->
 <br>
-	<hr id="quora">
+	<hr id="qu">
 <h1>Quora Picks</h1>
+<div id="q">
 <div class="quora">
 	<br>
 	<p>Quora is a community of people who love learning.Of course there is no end to love.Checkout some of my bookmarked answers for the love of learning.</p>
@@ -67,6 +82,8 @@
 	</ul>
 	<br>
 </div>
+</div>
 <footer><p>&copy; Harsh.All rights reserved.</p></footer>
+	 <script type="text/javascript" src="web.js"></script>
 </body>
 </html>

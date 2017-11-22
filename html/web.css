@@ -322,7 +322,7 @@ form{
 }
 input[type=text]{
     width: 70vw;
-    padding: 2.5vw;
+    padding: 1vw;
     height: 4vh;
     border: 0.1vw solid #ccc;
     border-radius: 4px;
@@ -331,7 +331,7 @@ input[type=text]{
 }
 textarea{
  	width: 70vw;
-    padding: 2.5vw;
+    padding: 0vw;
     height: 8vh;
     border: 0.1vw solid #ccc;
     border-radius: 4px;
@@ -341,7 +341,7 @@ textarea{
 input[type=email]{
  	width: 70vw;
  	height:4vh; 
-    padding: 2.5vw;
+    padding: 0vw;
     border: 0.1vw solid #ccc;
     border-radius: 4px;
     margin-top: 6vh;

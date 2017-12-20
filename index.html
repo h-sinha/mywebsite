@@ -1,0 +1,78 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Home Page</title>
+	 <meta charset="utf-8" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="web.css">
+	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+</head>
+<body onload="load()">
+	 <div id="loadwrap">
+  		<br><br><br><br><br><br><img src="images/e.gif" id="Loading..."><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  	</div>
+
+	<!--********************************************auxhome**********************************************************-->
+	<div id="hp">
+		<div class="auxhome">
+		<select name="menu" onchange="selectRedirect(this)">
+		    <option selected disabled>MENU</option>
+			<option value=index.html>HOME</option>
+ 			<option value=#in>ABOUT ME</option>
+  			<option value=#coding>CODING SKILLS</option>
+		    <option value=game.html>PROJECTS</option>
+  			<option value=contact.html>CONNECT</option>
+		</select>
+		<br>
+	</div>
+	<!--********************************************homebuttons******************************************************-->
+	<div class="homebuttons">
+			<ul>
+				<li><a href="index.html">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
+				<li><a href="#in" onclick=fade("in")>&nbsp;&nbsp;ABOUT ME&nbsp;&nbsp;</a></li>
+				<li><a href="#coding" onclick=fade("graph")>&nbsp;&nbsp;CODING SKILLS&nbsp;&nbsp;</a></li>
+				<li><a href="game.html">&nbsp;&nbsp;PROJECTS&nbsp;&nbsp;</a></li>
+				<li><a href="contact.html">&nbsp;&nbsp;CONNECT&nbsp;&nbsp;</a></li>
+			</ul>
+		</div>
+		<br>
+	<h1>Hi There! I'm Harsh</h1>
+	<img alt="me" src="images/mypic.jpg" id="me">
+	<p id="aboutme"><b>Pursuing Computer Science and Engineering at IIIT Hyderabad</b></p>
+<a href="#Top" id="backtotop"><img alt="scroll" src="images/scroll.png" height="120" width="120"></a>
+<!--*********************************************ABOUT ME**********************************************-->
+	<hr>
+	<div id="in"><br>
+		<h1>About Me</h1>
+	<div class="info">
+		<br>	
+	<p>I am a resident of Patna and currently pursuing Computer Science and Engineering at IIIT Hyderabad.I’m passionate, optimistic and a dedicated person who takes up responsibilities with utmost enthusiasm and see to it that I complete my tasks and assignments in time. I’ve a great amount of perseverance to achieve my goal.</p>
+	<p>Currently I am learning Web Development and different Programming languages.I am also active on various Competitive Programming sites like   <a href="http://www.hackerRank.com">HackerRank</a> , <a href="http://www.codeforces.com">Codeforces</a> , <a href="http://www.codechef.com">Codechef</a> , <a href="http://www.spoj.com">SPOJ</a> . </p>
+	<p>Wanna know more about me ? Contact me <a href="contact.html">here</a> . </p>
+	<br>
+</div>
+</div>
+	
+<!--******************************************CODING BACKGROUND*****************************************-->
+	<br>
+	<hr>
+	<div id="coding"><br>
+	<h1>Coding Skills</h1>
+	<div class="information">
+	<br>
+	<p>Programming languages I have tried<br><br>
+		<img id="graph" alt="codinggraph" src="images/graph1.png">
+	</p>
+	<br>
+</div>
+	</div>
+	<footer><p>&copy; Harsh.All rights reserved.</p></footer>
+	 <script type="text/javascript" src="web.js"></script>
+	</div>
+</body>
+</html>

@@ -1,0 +1,352 @@
+body{
+  background-image: url("images/webdesign.jpg");
+  background-repeat:no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: fill;
+}
+#hp 
+{
+   -webkit-animation: fadein 10s; 
+    -moz-animation: fadein 10s; 
+    -ms-animation: fadein 10s; 
+    -o-animation: fadein 10s;
+    animation: fadein 10s;
+    z-index: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  font-family: sans-serif ;
+  font-size: 2.2vw ;
+  
+
+}
+#loadwrap{
+  display: block;
+  background-color: #000000;  
+    height:100%;
+    width:100%;
+    z-index: 1000;
+    margin: 0 auto;
+  }
+  #loadwrap img{
+    margin-top: 100%;
+    height: 80%;
+    width: 40%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+  h1{
+
+    text-align: center;
+    color: #ffffff;
+    font-family: Bookman, URW Bookman L, serif;
+  }
+  h2{
+    text-align:center;
+      font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+  }
+@media screen and (min-width : 768px)
+{
+  #auxCanvas{
+    display:none;
+    
+  }
+}
+@media screen and (min-width : 768px)
+{
+  #myCanvas{
+    display:block;
+    
+  }
+}
+@media screen and (min-width : 768px)
+{
+  .auxhome{
+    display:none;
+    
+  }
+}
+@media screen and (max-width : 768px)
+{
+  .homebuttons
+  {
+    display:none;
+  }
+}
+@media screen and (max-width : 768px)
+{
+  #myCanvas
+  {
+    display:none;
+  }
+}
+@media screen and (max-width : 768px)
+{
+  #auxCanvas
+  {
+    display:block;
+  }
+}
+@keyframes slider{
+  from{
+    right:100vh;
+  }
+  to{
+    right=0;
+  }
+}
+select{
+  animation-duration: 5s;
+  animation-name: slider;
+  position: fixed;
+  right: 0;
+  top:50%;
+  padding: 5px 5px;
+  border-radius: 3px;
+  width:30vw;
+  height: auto;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  top:0;
+    text-align: center;
+    letter-spacing: 0.4vw;
+     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+  font-weight: bold;
+  text-align: center;
+    font-size: 2.8vw;
+    color:white;
+    letter-spacing: 0.01vh;
+    line-height: 9vh;
+    cursor: pointer;
+}
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+.homebuttons{
+  animation-duration: 5s;
+    animation-name: slidein;
+  z-index: 2;
+  margin: 0 auto;
+  position: fixed;
+  text-align: center;
+  height: auto;
+  width:100%;
+  top:0;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    letter-spacing: 0.4vw;
+}
+.homebuttons li{
+  display: inline-block;
+}
+.homebuttons ul  li a{
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+    font-size: 2.8vw;
+    color:white;
+    letter-spacing: 0.01vh;
+    line-height: 9vh;
+    display:block;
+}
+.homebuttons ul  {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+.homebuttons ul  li:hover {
+  background-color: white;
+  color:black;
+}
+.homebuttons ul  li a:hover {
+  color:black;
+}
+@keyframes slidedown {
+  from {
+    height: 100vh
+  }
+
+  to {
+    height: 15vh;
+  }
+}
+#backtotop{
+  animation-duration: 5s;
+    animation-name: slidedown;
+  margin: 3vw;
+  margin-right: 4vw;
+  width: 15vh;
+  height: 15vh;
+  position: fixed;
+    bottom: 0;
+    right:0;
+    z-index: 10
+
+}
+.information{
+  font-family:Alegreya Sans SC;
+  height :30%;
+  width: 80%;
+  margin:0 auto;
+    background: rgba(255, 255, 255, 0.5);
+  }
+#close{
+  display: inline block;
+  float:right;
+  height:5vh;
+  width:5vw;
+  background: #3498db;
+   background: #3498db;
+  border-radius: 20vw;
+  text-shadow: 1vw 1vw 2vw #666666;
+  box-shadow: 0vw 1vw 3vw #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 2vh;
+  padding: 0vw 0vw 0vw 0vw;
+  text-decoration: none;
+}
+#col1 {
+    box-sizing: border-box;
+    overflow: hidden;
+    display:none;
+    height:0vh;
+    width:0vw;
+    float: left;
+    padding: 2.5vw;
+    border: 0.2vh solid white;
+    font-family:Alegreya Sans SC;
+    margin-top:0;     
+    background: rgba(255, 255, 255, 0.5);
+}
+.column {
+    float: left;
+    width: 40%;
+    padding: 8vh;
+}
+
+.row:after {
+    display: table;
+    clear: both;
+}
+#col2 {
+    padding: 2.5vw;
+    font-family:Alegreya Sans SC;
+    margin:0 auto;
+}
+.btn {
+  float:left;
+  display: block;
+  margin: 0 auto;
+  background: #3498db;
+  border-radius: 20vw;
+  text-shadow: 1vw 2vw 3vw #666666;
+  box-shadow: 0vw 0.5vw 1vw #666666;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 2vh;
+  padding: 1vw 2vw 1vw 2vw;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+* { 
+  padding: 0; 
+  margin: 0;
+  box-sizing:border-box; 
+}
+p{
+  margin-left: 2%;
+  font-family:Alegreya Sans SC;
+  text-align: center;
+  color: #ffffff;
+}
+h2{
+    text-align:center;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; 
+    color: #090b69;
+  }
+h1{
+  margin-top: 6vh;
+  text-align: center;
+  color: #ffffff;
+  font-family: Bookman, URW Bookman L, serif;
+}
+#myCanvas {
+  background: #eee; 
+  margin-top: 8vh;
+  margin-left: 30vw;
+  width:40vw;
+  height:50vh;
+}
+#auxCanvas {
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #eee; 
+  margin-top: 8vh;
+  margin-left: 50vw;
+  width:40vw;
+  height:30vh;
+  text-align: center;
+  vertical-align: center;
+}
+#auxCanvas table{
+  text-align: center;
+  padding: 6vh;
+  font-size: 1.9vh;
+  font-family: Alegreya Sans SC;
+}

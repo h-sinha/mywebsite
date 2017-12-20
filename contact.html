@@ -1,0 +1,86 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>CONNECT</title>
+	 <meta charset="utf-8" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="web.css">
+	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	 <script src="web.js"></script>
+	 <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSftUDaOkFkf1ovj9ZZifFprtuwv0Ptj0&callback=initMap">
+    </script>
+</head>
+	<body onload="load()">
+	 <div id="loadwrap">
+  		<br><br><br><br><br><br><img src="images/e.gif" alt="Loading..."><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  	</div>
+	<!--********************************************auxhome**********************************************************-->
+	<div id="hp">
+	<div class="auxhome">
+		<select name="menu" onchange="selectRedirect(this)">
+		    <option selected disabled>MENU</option>
+			<option value=index.html#TOP>HOME</option>
+ 			<option value=index.html#in>ABOUT ME</option>
+  			<option value=index.html#coding>CODING SKILLS</option>
+		    <option value=game.html>PROJECTS</option>
+  			<option value=contact.html>CONNECT</option>
+		</select>
+		<br>
+	</div>
+	<!--********************************************homebuttons******************************************************-->
+<a href="#Top" id="backtotop"><img alt="scroll" src="images/scroll.png" height="120" width="120"></a>	
+	<div class="homebuttons">
+			<ul>
+				<li><a href="index.html" onclick=fade("me")>&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
+				<li><a href="index.html#in" onclick=fade("in")>&nbsp;&nbsp;ABOUT ME&nbsp;&nbsp;</a></li>
+				<li><a href="index.html#coding" onclick=fade("graph")>&nbsp;&nbsp;CODING SKILLS&nbsp;&nbsp;</a></li>
+				<li><a href="game.html">&nbsp;&nbsp;PROJECTS&nbsp;&nbsp;</a></li>
+				<li><a href="contact.html">&nbsp;&nbsp;CONNECT&nbsp;&nbsp;</a></li>
+			</ul>
+		</div> <br>
+	<h1>Get In Touch</h1>
+	<div class="information">
+    <br>
+	<br>
+	<p>
+	<a href="mailto:harsh.26020@gmail.com">
+		<img alt="gmail" id="gmail" src="images/gmail.png" >
+	</a>
+	&nbsp;
+	&nbsp;
+	<a href="http://www.github.com/h-sinha">
+		<img id="git" alt="google" src="images/github.png" >
+	</a>
+	&nbsp;
+	&nbsp;
+	<a href="https://www.facebook.com/h.sinha26">
+		<img id="facebook" alt="facebook" src="images/facebook.png" >
+	</a>
+	<a href="https://www.twitter.com/iamharsh_h1">
+		<img alt="twitter" id="twitter" src="images/twitter.png" >
+	</a>
+	</p>
+	<br>
+	</div><br>
+    	<div id="map"><script>initMap();</script></div><br><div id="mapcaption"><br><br><br><h1>MY Place &hearts;&hearts;&hearts;</h1></div><br><br><br><br><br>
+    	<h1>Drop a Message Here!</h1>
+    <div class="information">
+    <br>
+    	<form>
+    		Name:<br><input placeholder="Name" type="text"><br>
+    		Email:<br><input type="email" placeholder="Enter your email"><br>
+    		Phone Number:<br><input placeholder="Phone Number" type="text"><br>
+    		Message:<br><textarea rows="6" placeholder="Pour Your Heart Out" name="message"></textarea>  <br>
+    		<div id="submit"><input type="submit" value="Send"></div>
+  		</form>
+  	</div>
+<footer><p>&copy; Harsh.All rights reserved.</p></footer>
+</div>
+</body>
+</html>

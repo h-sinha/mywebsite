@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>PROJECTS</title>
+	 <meta charset="utf-8" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="web.css">
+	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Barlow Condensed' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+	 <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+	 <link rel="shortcut icon" href="images/favicon.ico">
+	 <script src="web.js"></script>
+	 <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSftUDaOkFkf1ovj9ZZifFprtuwv0Ptj0&callback=initMap">
+    </script>
+</head>
+	<body onload="load()">
+	 <div id="loadwrap">
+  		<br><br><br><br><br><br><img src="images/e.gif" alt="Loading..."><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  	</div>
+	<!--********************************************auxhome**********************************************************-->
+	<div id="hp">
+	<div class="auxhome">
+		<select name="menu" onchange="selectRedirect(this)">
+		    <option selected disabled>MENU</option>
+			<option value=index.html#TOP>HOME</option>
+ 			<option value=index.html#in>ABOUT ME</option>
+  			<option value=index.html#coding>CODING SKILLS</option>
+		    <option value=projects.html>PROJECTS</option>
+  			<option value=contact.html>CONNECT</option>
+		</select>
+		<br>
+	</div>
+	<!--********************************************homebuttons******************************************************-->
+<a href="#Top" id="backtotop"><img alt="scroll" src="images/scroll.png" height="120" width="120"></a>	
+	<div class="homebuttons">
+			<ul>
+				<li><a href="index.html" onclick=fade("me")>&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
+				<li><a href="index.html#in" onclick=fade("in")>&nbsp;&nbsp;ABOUT ME&nbsp;&nbsp;</a></li>
+				<li><a href="index.html#coding" onclick=fade("graph")>&nbsp;&nbsp;CODING SKILLS&nbsp;&nbsp;</a></li>
+				<li><a href="projects.html">&nbsp;&nbsp;PROJECTS&nbsp;&nbsp;</a></li>
+				<li><a href="contact.html">&nbsp;&nbsp;CONNECT&nbsp;&nbsp;</a></li>
+			</ul>
+		</div> <br>
+		<h1>My Projects</h1>
+		<div class="single">
+			<br>
+			<img src="images/dums.jpg">
+			<p>A simple game made using basic  JavaScript . Click
+			<a href="game.html">here</a> to play .</p> 
+		</div>
+		<br>
+		<div class="single">
+			<br>
+			<img src="images/calc.jpg">
+			<p>A calculator that performs basic mathematical operations . Click <a href="calc.html"> here</a>  to check it out .</p>
+		</div>
+		<br>
+	 <script type="text/javascript" src="web.js"></script>
+	</body>
+	</html>

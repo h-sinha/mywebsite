@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title>Calculator</title>
+	 <meta charset="utf-8" />
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <link rel="stylesheet" type="text/css" href="calc.css">
+	 <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body onload=load()>
+	 <div id="loadwrap">
+  		<br><br><br><br><br><br><img src="images/e.gif" id="Loading..."><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  	</div>
+
+	<!--********************************************auxhome**********************************************************-->
+	<div id="hp">
+		<div class="auxhome">
+		<select name="menu" onchange="selectRedirect(this)">
+		    <option selected disabled>MENU</option>
+			<option value=index.html>HOME</option>
+ 			<option value=index.html#in>ABOUT ME</option>
+  			<option value=index.html#coding>CODING SKILLS</option>
+		    <option value=projects.html>PROJECTS</option>
+  			<option value=contact.html>CONNECT</option>
+		</select>
+		<br>
+	</div>
+	<!--********************************************homebuttons******************************************************-->
+	<div class="homebuttons">
+			<ul>
+				<li><a href="index.html">&nbsp;&nbsp;HOME&nbsp;&nbsp;</a></li>
+				<li><a href="index.html#in" onclick=fade("in")>&nbsp;&nbsp;ABOUT ME&nbsp;&nbsp;</a></li>
+				<li><a href="index.html#coding" onclick=fade("graph")>&nbsp;&nbsp;CODING SKILLS&nbsp;&nbsp;</a></li>
+				<li><a href="projects.html">&nbsp;&nbsp;PROJECTS&nbsp;&nbsp;</a></li>
+				<li><a href="contact.html">&nbsp;&nbsp;CONNECT&nbsp;&nbsp;</a></li>
+			</ul>
+		</div>
+		<a href="#Top" id="backtotop"><img alt="scroll" src="images/scroll.png" height="120" width="120"></a>
+		<br>
+		<h1>Calculator</h1>
+	<table>
+		<tr>
+			<td><button onclick=clr() id="clr">C</button></td>
+			<td id ="disp" colspan="3"></td></tr>
+		<tr>
+			<td><button onclick=num(7) id="num">7</button></td>
+			<td><button onclick=num(8) id="num">8</button></td>
+			<td><button onclick=num(9) id="num">9</button></td>
+			<td><button onclick=op(1) id="o">+</button></td>
+		</tr>
+		<tr>
+			<td><button onclick=num(4) id="num">4</button></td>
+			<td><button onclick=num(5) id="num">5</button></td>
+			<td><button onclick=num(6) id="num">6</button></td>
+			<td><button onclick=op(2) id="o">-</button></td>
+		</tr>
+		<tr>
+			<td><button onclick=num(1) id="num">1</button></td>
+			<td><button onclick=num(2) id="num">2</button></td>
+			<td><button onclick=num(3) id="num">3</button></td>
+			<td><button onclick=op(3) id="o">&divide;</button></td>
+		</tr>
+		<tr>
+			<td><button onclick=num(0) id="num">0</button></td>
+			<td><button onclick=op(5) id="o">^</button></td>
+			<td><button onclick=output() id="eq">=</button></td>
+			<td><button onclick=op(4) id="o">&#215;</button></td>
+		</tr></table>
+<script src="calc.js"></script>
+<script type="text/javascript" src="web.js"></script>
+</body>
+</html>
